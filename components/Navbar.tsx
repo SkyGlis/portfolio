@@ -1,39 +1,58 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+interface NavbarProps {
+  onNavigate: (section: string) => void;
+  active: string
+}
+
+export default function Navbar({ onNavigate, active }: NavbarProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className="bg-white shadow-sm">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-semibold text-gray-800">
+            <button
+              onClick={() => onNavigate("hero")}
+              className="text-xl font-semibold text-gray-800"
+            >
               Daniel Santos
-            </Link>
+            </button>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link href="/" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+              <button
+                onClick={() => onNavigate("hero")}
+                className={`${active === "hero" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
+              >
                 Início
-              </Link>
-              <Link href="/projects" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
+              </button>
+              <button
+                onClick={() => onNavigate("about")}
+                className={`${active === "about" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
+              >
+                Sobre mim
+              </button>
+              <button
+                onClick={() => onNavigate("skills")}
+                className={`${active === "skills" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
+              >
+                Estudos / Experiência
+              </button>
+              <button
+                onClick={() => onNavigate("projects")}
+                className={`${active === "projects" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
+              >
                 Projetos
-              </Link>
-              <Link href="#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                Sobre
-              </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                Contacto
-              </Link>
+              </button>
             </div>
           </div>
           <div className="md:hidden">
@@ -55,21 +74,45 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
-              Home
-            </Link>
-            <Link href="/projects" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
+            <button
+              onClick={() => {
+                onNavigate("hero");
+                toggleMenu();
+              }}
+              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Início
+            </button>
+            <button
+              onClick={() => {
+                onNavigate("about");
+                toggleMenu();
+              }}
+              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Sobre mim
+            </button>
+            <button
+              onClick={() => {
+                onNavigate("skills");
+                toggleMenu();
+              }}
+              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Skills
+            </button>
+            <button
+              onClick={() => {
+                onNavigate("projects");
+                toggleMenu();
+              }}
+              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+            >
               Projects
-            </Link>
-            <Link href="/about" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
-              About
-            </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
-              Contact
-            </Link>
+            </button>
           </div>
         </div>
       )}
     </nav>
-  )
+  );
 }

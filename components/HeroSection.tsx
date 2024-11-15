@@ -42,7 +42,7 @@ export default function Hero() {
             <div className="relative w-64 h-64 sm:w-80 sm:h-80">
               <Image
                 src="/photo.jpg"
-                alt="John Doe"
+                alt="Daniel Santos"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-full shadow-lg"
