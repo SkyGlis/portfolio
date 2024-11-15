@@ -16,13 +16,6 @@ export default function AboutMe() {
             <p className="text-lg text-gray-700">
             Nos meus tempos livres, gosto de ouvir música, treinar e conviver. Criar projetos de programação e resolver problemas são o que me motiva, pois acredito que a tecnologia tem o poder de moldar o futuro.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <span className="bg-primary text-white px-3 py-1 rounded-full text-sm">React</span>
-              <span className="bg-primary text-white px-3 py-1 rounded-full text-sm">Next.js</span>
-              <span className="bg-primary text-white px-3 py-1 rounded-full text-sm">TypeScript</span>
-              <span className="bg-primary text-white px-3 py-1 rounded-full text-sm">Node.js</span>
-              <span className="bg-primary text-white px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-            </div>
           </div>
           <div className="flex justify-center md:justify-end">
             <div className="relative w-64 h-64 sm:w-80 sm:h-80">

@@ -27,8 +27,8 @@ export default function MainPage() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.75 }}
       >
-        {activeSection === "hero" && <Hero />}
-        {activeSection === "about" && <AboutMe />}
+        {activeSection === "hero" && <Hero handle={handleNavigation} />}
+        {activeSection === "about" && <AboutMe/>}
         {activeSection === "skills" && <StudyTimeline />}
         {activeSection === "projects" && <Projects />}
       </motion.div>

@@ -66,7 +66,7 @@ export default function Projects({ projects = [] }: { projects?: Project[] }) {
               {project.tech && project.tech.map((technology, index) => ( <Badge key={index} className="mr-1">{technology}</Badge> ))}
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-              <div className="flex justify-between">
+              <div className="flex justify-between content-end">
                 {project.githubUrl && 
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">

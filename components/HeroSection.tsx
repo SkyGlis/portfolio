@@ -3,9 +3,13 @@
 import Image from 'next/image'
 import { ReactTyped } from 'react-typed'
 
-export default function Hero() {
+interface HeroProps {
+  handle: (section: string) => void;
+}
+
+export default function Hero({ handle }: HeroProps) {
   return (
-    <div className="bg-white">
+    <div className="bg-white h-[600px]">
       <div className="max-w-7xl h-[600px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
@@ -30,12 +34,12 @@ export default function Hero() {
               >
                 Download CV
               </a>
-              <a
-                href="#contact"
+              <button
+                onClick={() => handle("about")}
                 className="bg-black text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-dark transition-colors duration-300"
               >
                 Saber Mais
-              </a>
+              </button>
             </div>
           </div>
           <div className="flex justify-center md:justify-end">
