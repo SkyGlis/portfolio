@@ -36,7 +36,7 @@ export default function Projects({ projects = [] }: { projects?: Project[] }) {
       tech: ["PHP", "JQuery"],
       type: "Website",
       title: "Website Origami",
-      description: "Website empresarial da empresa Origami Hub. Contribui no design do site, pela estruturação e organização do conteúdo, bem como pelo desenvolvimento do backend.",
+      description: "Website empresarial da empresa Origami Hub. Contribuí no design do site, pela estruturação e organização do conteúdo, bem como pelo desenvolvimento do backend.",
       liveUrl: "https://origamihub.tech/site/index.php"
     },
     {
@@ -71,14 +71,14 @@ export default function Projects({ projects = [] }: { projects?: Project[] }) {
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <Github className="w-4 h-4 mr-2" />
-                    GitHub
+                    Github
                   </a>
                 </Button>
                 }
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Ver mais
+                    Demo
                   </a>
                 </Button>
               </div>

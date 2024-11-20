@@ -9,13 +9,15 @@ interface HeroProps {
 
 export default function Hero({ handle }: HeroProps) {
   return (
-    <div className="bg-white h-[600px]">
+    <div className="bg-white h-[800px]">
       <div className="max-w-7xl h-[600px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Olá, eu sou {' '}
-              <span className="text-primary">
+              Olá, eu sou
+            </h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r bg-gradient-to-r from-red-400 to-red-900 inline-block text-transparent bg-clip-text">
                 <ReactTyped
                   strings={['o Daniel', 'um Programador', 'Desenvolvedor Web']}
                   typeSpeed={60}

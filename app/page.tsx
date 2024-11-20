@@ -4,9 +4,10 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/HeroSection";
 import AboutMe from "@/components/AboutMe";
-import StudyTimeline from "@/components/StudyTimeline";
+import NewStudy from "@/components/NewStudy";
 import Projects from "@/components/Projects";
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer";
 
 export default function MainPage() {
   const [activeSection, setActiveSection] = useState<string>("hero");
@@ -29,9 +30,10 @@ export default function MainPage() {
       >
         {activeSection === "hero" && <Hero handle={handleNavigation} />}
         {activeSection === "about" && <AboutMe/>}
-        {activeSection === "skills" && <StudyTimeline />}
+        {activeSection === "skills" && <NewStudy />}
         {activeSection === "projects" && <Projects />}
       </motion.div>
+      <Footer />
     </div>
   );
 }
