@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Digital - Daniel Santos
 
-## Getting Started
+Bem-vindo ao meu portfólio digital! Este projeto foi desenvolvido utilizando **Next.js** para a estrutura e **Tailwind CSS** para o design. Aqui, podes explorar uma visão geral do meu trabalho, habilidades e experiência em desenvolvimento web.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React para a construção de páginas web com renderização no lado do servidor (SSR) e geração de sites estáticos (SSG).
+- **Tailwind CSS**: Framework de CSS utilitário para design rápido e responsivo.
+- **React**: Biblioteca JavaScript para construção de interfaces de utilizador.
+- **Vercel**: Plataforma utilizada para o deploy da aplicação.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Página inicial**: Uma visão geral sobre quem sou, as minhas habilidades e informações de contacto.
+- **Projetos**: Seção com alguns dos projetos que desenvolvi, incluindo links e descrições.
+- **Sobre mim**: Uma breve biografia, detalhando o meu percurso profissional e académico.
+- **Contacto**: Formulário para entrares em contacto comigo diretamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como Rodar Localmente
 
-## Learn More
+1. Clona este repositório para o teu ambiente local:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    git clone https://github.com/username/portfolio.git
+    cd portfolio
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Instala as dependências necessárias:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm install
+    ```
 
-## Deploy on Vercel
+3. Inicia o servidor de desenvolvimento:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Abre o navegador e acede a:
+
+    ```bash
+    http://localhost:3000
+    ```
+
+## Deploy
+
+Este portfólio está hospedado na [Vercel](https://vercel.com/), garantindo que está sempre disponível online. Podes aceder ao site em:
+
+[https://danielsantos.vercel.app](https://danielsantos.vercel.app)
+
+## Contribuições
+
+Se encontrares algum erro ou quiseres sugerir melhorias, fica à vontade para abrir uma *issue* ou fazer um *pull request*.
+
+
+---
+
+Obrigado por visitares o meu portfólio!
+
