@@ -21,20 +21,20 @@ Bem-vindo ao meu portfólio digital! Este projeto foi desenvolvido utilizando **
 1. Clona este repositório para o teu ambiente local:
 
     ```bash
-    git clone https://github.com/username/portfolio.git
+    [git clone https://github.com/username/portfolio.git](https://github.com/SkyGlis/portfolio.git)
     cd portfolio
     ```
 
 2. Instala as dependências necessárias:
 
     ```bash
-    npm install
+    pnpm install
     ```
 
 3. Inicia o servidor de desenvolvimento:
 
     ```bash
-    npm run dev
+    pnpm dev
     ```
 
 4. Abre o navegador e acede a:
@@ -47,12 +47,11 @@ Bem-vindo ao meu portfólio digital! Este projeto foi desenvolvido utilizando **
 
 Este portfólio está hospedado na [Vercel](https://vercel.com/), garantindo que está sempre disponível online. Podes aceder ao site em:
 
-[https://danielsantos.vercel.app](https://danielsantos.vercel.app)
+[https://daniel-santos.vercel.app](https://daniel-santos.vercel.app)
 
 ## Contribuições
 
 Se encontrares algum erro ou quiseres sugerir melhorias, fica à vontade para abrir uma *issue* ou fazer um *pull request*.
-
 
 ---
 
