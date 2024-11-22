@@ -14,7 +14,7 @@ export default function AboutMe() {
             Olá! Sou um estudante de Programação da ESTGA, em Aveiro, com um enorme interesse por tecnologia e desenvolvimento de software. Tenho 18 anos e estou a explorar o mundo da programação, sempre à procura de aprender novas linguagens e aprimorar as minhas habilidades.
             </p>
             <p className="text-lg text-gray-700">
-            Nos meus tempos livres, gosto de ouvir música, treinar e conviver. Criar projetos de programação e resolver problemas são o que me motiva, pois acredito que a tecnologia tem o poder de moldar o futuro.
+            Desde cedo, aos 11 anos, iniciei a minha jornada na programação, aprendendo de forma autónoma e desenvolvendo uma paixão pela área. Considero-me uma pessoa determinada e persistente na resolução de problemas, com a capacidade de me adaptar facilmente a diferentes projetos e tecnologias. Estas características permitem-me acrescentar valor às empresas através da flexibilidade e dedicação que coloco no trabalho.
             </p>
           </div>
           <div className="flex justify-center md:justify-end">

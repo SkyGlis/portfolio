@@ -31,14 +31,14 @@ export default function Hero({ handle }: HeroProps) {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               <a
-                href="#contact"
-                className="bg-black text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-dark transition-colors duration-300"
+                onClick={() => handle("cv")}
+                className="bg-black text-white px-6 text-center py-3 rounded-md text-lg font-medium hover:bg-primary-dark transition-colors duration-300"
               >
-                Download CV
+                Ver Currículo
               </a>
               <button
                 onClick={() => handle("about")}
-                className="bg-black text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-primary-dark transition-colors duration-300"
+                className="bg-black text-white px-6 py-3 text-center rounded-md text-lg font-medium hover:bg-primary-dark transition-colors duration-300"
               >
                 Saber Mais
               </button>

@@ -15,33 +15,36 @@ interface Project {
 export default function Projects({ projects = [] }: { projects?: Project[] }) {
   // Sample projects data if none provided
   const sampleProjects: Project[] = [
+    /*
     {
       profissional: "Origami Hub",
       type: "WebApp",
-      tech: ["Next.js", "Tailwind CSS"],
+      tech: ["Next.js", "Tailwind CSS", "SQLite"],
       title: "Calculadora de Pegada CO2",
-      description: "Aplicação que permite aos utilizadores calcular a sua pegada de carbono anual, através do preenchimento de um formulário.",
+      description: "Aplicação que permite aos utilizadores calcular a sua pegada de carbono anual. Fui responsável pelo desenvolvimento do backend e pela implementação da base de dados.",
       liveUrl: "https://ecommerce-example.com"
     },
+    */
     {
       profissional: "Origami Hub",
       type: "WebApp",
       title: "Calculadora Echo Unify",
-      tech: ["PHP", "JQuery"],
-      description: "Calculadora para Hardware para sistemas de video-vigilância.\n Fui responsável pelo pelo desenvolvimento do backend e gestão das APIs.",
+      tech: ["PHP", "JQuery", "MySQL"],
+      description: "Calculadora para Hardware para sistemas de video-vigilância.\n Contruibuí np desenvolvimento do backend e gestão das APIs.",
       liveUrl: "https://echounify.com/calculator/"
     },
     {
       profissional: "Origami Hub",
-      tech: ["PHP", "JQuery"],
+      tech: ["PHP", "JQuery", "CSS", "MySQL"],
       type: "Website",
       title: "Website Origami",
-      description: "Website empresarial da empresa Origami Hub. Contribuí no design do site, pela estruturação e organização do conteúdo, bem como pelo desenvolvimento do backend.",
+      description: "Website empresarial da empresa Origami Hub. Fui responsável pelo design do site, pela estruturação e organização do conteúdo, bem como pelo desenvolvimento do backend.",
       liveUrl: "https://origamihub.tech/site/index.php"
     },
     {
-      title: "Portfólio",
+      title: "Portfólio Pessoal",
       tech: ["Next.js", "Tailwind CSS"],
+      type: "Website",
       description: "Portfólio pessoal, cujo eu testo maior parte das tecnologias que uso, de forma a evoluir o meu conhecimento na programação.",
       githubUrl: "https://github.com/SkyGlis/portfolio",
       liveUrl: "https://daniel-santos.vercel.app"
