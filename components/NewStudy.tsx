@@ -36,7 +36,7 @@ const studyEntries: TimelineEntry[] = [
     position: "Escola Superior de Tecnologia e Gestão de Águeda | Universidade de Aveiro"
   },
   {
-    logo: "/white.png",
+    logo: "/aee.png",
     startDate: "Set 2021",
     endDate: "Jul 2024",
     company: "Curso Profissional de Gestão de Equipamentos Informáticos",

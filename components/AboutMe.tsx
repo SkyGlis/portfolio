@@ -11,10 +11,10 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-700">
-            Olá! Sou um estudante de Programação da ESTGA, em Aveiro, com um enorme interesse por tecnologia e desenvolvimento de software. Tenho 18 anos e estou a explorar o mundo da programação, sempre à procura de aprender novas linguagens e aprimorar as minhas habilidades.
+            Olá! Sou estudante de Programação na ESTGA - Universidade de Aveiro, com um enorme interesse por tecnologia e desenvolvimento de software. Tenho 18 anos e estou a explorar o mundo da programação, sempre à procura de aprender novas linguagens e desenvolver as minhas competências.
             </p>
             <p className="text-lg text-gray-700">
-            Desde cedo, aos 11 anos, iniciei a minha jornada na programação, aprendendo de forma autónoma e desenvolvendo uma paixão pela área. Considero-me uma pessoa determinada e persistente na resolução de problemas, com a capacidade de me adaptar facilmente a diferentes projetos e tecnologias. Estas características permitem-me acrescentar valor às empresas através da flexibilidade e dedicação que coloco no trabalho.
+            Desde cedo, aos 11 anos, que iniciei a minha jornada na programação, aprendendo de forma autónoma e desenvolvendo uma paixão pela área. Considero-me uma pessoa determinada e persistente na resolução de problemas, com a capacidade de me adaptar facilmente a diferentes projetos e tecnologias. Estas características permitem-me acrescentar valor às empresas.
             </p>
           </div>
           <div className="flex justify-center md:justify-end">

@@ -14,12 +14,12 @@ export default function Hero({ handle }: HeroProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Olá, eu sou
+              Olá, sou
             </h1>
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r bg-gradient-to-r from-red-400 to-red-900 inline-block text-transparent bg-clip-text">
                 <ReactTyped
-                  strings={['o Daniel', 'um Programador', 'Desenvolvedor Web']}
+                  strings={['o Daniel', 'um Programador', 'Developer Web']}
                   typeSpeed={60}
                   backSpeed={40}
                   loop

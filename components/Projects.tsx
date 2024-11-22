@@ -45,7 +45,7 @@ export default function Projects({ projects = [] }: { projects?: Project[] }) {
       title: "Portfólio Pessoal",
       tech: ["Next.js", "Tailwind CSS"],
       type: "Website",
-      description: "Portfólio pessoal, cujo eu testo maior parte das tecnologias que uso, de forma a evoluir o meu conhecimento na programação.",
+      description: "Portfólio pessoal, no qual usei a maior parte das tecnologias que conheço, de forma a evoluir no meu conhecimento na programação.",
       githubUrl: "https://github.com/SkyGlis/portfolio",
       liveUrl: "https://daniel-santos.vercel.app"
     }
