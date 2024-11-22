@@ -21,7 +21,7 @@ Bem-vindo ao meu portfólio digital! Este projeto foi desenvolvido utilizando **
 1. Clona este repositório para o teu ambiente local:
 
     ```bash
-    [git clone https://github.com/username/portfolio.git](https://github.com/SkyGlis/portfolio.git)
+    git clone https://github.com/username/portfolio.git
     cd portfolio
     ```
 
