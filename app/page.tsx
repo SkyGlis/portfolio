@@ -9,6 +9,7 @@ import Projects from "@/components/Projects";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
 import CV from "@/components/CV";
+import PitchPage from "@/components/PitchPage";
 
 export default function MainPage() {
   const [activeSection, setActiveSection] = useState<string>("hero");
@@ -32,6 +33,7 @@ export default function MainPage() {
         {activeSection === "hero" && <Hero handle={handleNavigation} />}
         {activeSection === "about" && <AboutMe/>}
         {activeSection === "cv" && <CV/>}
+        {activeSection === "pitch" && <PitchPage />}
         {activeSection === "skills" && <NewStudy />}
         {activeSection === "projects" && <Projects />}
       </motion.div>

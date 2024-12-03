@@ -48,6 +48,12 @@ export default function Navbar({ onNavigate, active }: NavbarProps) {
                 Currículo
               </button>
               <button
+                onClick={() => onNavigate("pitch")}
+                className={`${active === "pitch" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
+              >
+                Pitch
+              </button>
+              <button
                 onClick={() => onNavigate("skills")}
                 className={`${active === "skills" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
               >
@@ -79,13 +85,13 @@ export default function Navbar({ onNavigate, active }: NavbarProps) {
 
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 grid grid-cols-1 pb-3 space-y-1 sm:px-3">
             <button
               onClick={() => {
                 onNavigate("hero");
                 toggleMenu();
               }}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+              className={`${active === "hero" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
             >
               Início
             </button>
@@ -94,22 +100,28 @@ export default function Navbar({ onNavigate, active }: NavbarProps) {
                 onNavigate("about");
                 toggleMenu();
               }}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+              className={`${active === "about" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
             >
               Sobre mim
             </button>
             <button
-                onClick={() => onNavigate("cv")}
+                onClick={() => {onNavigate("cv"); toggleMenu()}}
                 className={`${active === "cv" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
               >
                 Currículo
+              </button>
+              <button
+                onClick={() => {onNavigate("pitch"); toggleMenu()}}
+                className={`${active === "pitch" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
+              >
+                Pitch
               </button>
             <button
               onClick={() => {
                 onNavigate("skills");
                 toggleMenu();
               }}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+              className={`${active === "skills" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
             >
               Estudos / Experiência
             </button>
@@ -118,7 +130,7 @@ export default function Navbar({ onNavigate, active }: NavbarProps) {
                 onNavigate("projects");
                 toggleMenu();
               }}
-              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+              className={`${active === "projects" ? "bg-primary text-white border-1 hover:opacity-90" : "text-gray-700 hover:text-gray-900"} px-3 py-2 rounded-md text-sm font-medium`}
             >
               Projetos
             </button>
