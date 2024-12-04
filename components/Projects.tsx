@@ -42,6 +42,14 @@ export default function Projects({ projects = [] }: { projects?: Project[] }) {
       liveUrl: "https://origamihub.tech/site/index.php"
     },
     {
+      tech: ["Arduino (C)", "PHP", "CSS", "MySQL"],
+      type: "IoTs / WebApp",
+      title: "Smart Locker",
+      description: "Projeto de Aptidão Profissional que consiste num sistema de tranca para cofres que utiliza cartão RFID e PIN associado. Inclui uma WebApp para registo de acessos e gestão de contas, com os dados armazenados numa base de dados.",
+      githubUrl: "https://github.com/SkyGlis/smart-locker",
+      liveUrl: "https://www.youtube.com/watch?v=RLugrnCRbE4"
+    },
+    {
       title: "Portfólio Pessoal",
       tech: ["Next.js", "Tailwind CSS"],
       type: "Website",
