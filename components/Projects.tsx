@@ -1,7 +1,7 @@
 import { Github, ExternalLink } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-
+import Config from '@/config.json'
 interface Project {
   profissional?: string
   type?: string
@@ -12,7 +12,8 @@ interface Project {
   liveUrl: string
 }
 
-export default function Projects({ projects = [] }: { projects?: Project[] }) {
+export default function Projects() {
+  const projects = Config.projects
   // Sample projects data if none provided
   const sampleProjects: Project[] = [
     /*
@@ -25,30 +26,6 @@ export default function Projects({ projects = [] }: { projects?: Project[] }) {
       liveUrl: "https://ecommerce-example.com"
     },
     */
-    {
-      profissional: "Origami Hub",
-      type: "WebApp",
-      title: "Calculadora Echo Unify",
-      tech: ["PHP", "JQuery", "MySQL"],
-      description: "Calculadora para Hardware para sistemas de video-vigilância.\n Contruibuí np desenvolvimento do backend e gestão das APIs.",
-      liveUrl: "https://echounify.com/calculator/"
-    },
-    {
-      profissional: "Origami Hub",
-      tech: ["PHP", "JQuery", "CSS", "MySQL"],
-      type: "Website",
-      title: "Website Origami",
-      description: "Website empresarial da empresa Origami Hub. Fui responsável pelo design do site, pela estruturação e organização do conteúdo, bem como pelo desenvolvimento do backend.",
-      liveUrl: "https://origamihub.tech/site/index.php"
-    },
-    {
-      tech: ["Arduino (C)", "PHP", "CSS", "MySQL"],
-      type: "IoTs / WebApp",
-      title: "Smart Locker",
-      description: "Projeto de Aptidão Profissional que consiste num sistema de tranca para cofres que utiliza cartão RFID e PIN associado. Inclui uma WebApp para registo de acessos e gestão de contas, com os dados armazenados numa base de dados.",
-      githubUrl: "https://github.com/SkyGlis/smart-locker",
-      liveUrl: "https://www.youtube.com/watch?v=RLugrnCRbE4"
-    },
     {
       title: "Portfólio Pessoal",
       tech: ["Next.js", "Tailwind CSS"],

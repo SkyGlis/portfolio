@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import Image from "next/image"
+import Config from '@/config.json'
 
 interface TimelineEntry {
   logo: string
@@ -10,39 +11,9 @@ interface TimelineEntry {
   position: string
 }
 
-const workEntries: TimelineEntry[] = [
-  {
-    logo: "/origami_logo.png",
-    startDate: "Abr 2024",
-    endDate: "Jul 2024",
-    company: "Origami Hub",
-    position: "Estágio Curricular"
-  },
-  {
-    logo: "/inforlandia_logo.png",
-    startDate: "Jan 2023",
-    endDate: "Fev 2023",
-    company: "Inforlândia S.A.",
-    position: "Senior Software Developer"
-  }
-]
+const workEntries: TimelineEntry[] = Config.workExperience
 
-const studyEntries: TimelineEntry[] = [
-  {
-    logo: "/estga.jpg",
-    startDate: "Set 2024",
-    endDate: "Jul 2026",
-    company: "CTESP em Programação de Sistemas de Informação",
-    position: "Escola Superior de Tecnologia e Gestão de Águeda | Universidade de Aveiro"
-  },
-  {
-    logo: "/aee.png",
-    startDate: "Set 2021",
-    endDate: "Jul 2024",
-    company: "Curso Profissional de Gestão de Equipamentos Informáticos",
-    position: "Escola Dr. Jaime Magalhães Lima"
-  }
-]
+const studyEntries: TimelineEntry[] = Config.studies
 
 export default function Component() {
   return (

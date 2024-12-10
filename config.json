@@ -1,0 +1,70 @@
+{
+  "CV": "/CV.pdf",
+  "youtubeID": "4o8BtFDZcLg",
+  "workExperience": [
+    {
+      "logo": "/origami_logo.png",
+      "startDate": "Abr 2024",
+      "endDate": "Jul 2024",
+      "company": "Origami Hub",
+      "position": "Estágio Curricular"
+    },
+    {
+      "logo": "/inforlandia_logo.png",
+      "startDate": "Jan 2023",
+      "endDate": "Fev 2023",
+      "company": "Inforlândia S.A.",
+      "position": "Senior Software Developer"
+    }
+  ],
+  "studies": [
+    {
+      "logo": "/estga.jpg",
+      "startDate": "Set 2024",
+      "endDate": "Jul 2026",
+      "company": "CTESP em Programação de Sistemas de Informação",
+      "position": "Escola Superior de Tecnologia e Gestão de Águeda | Universidade de Aveiro"
+    },
+    {
+      "logo": "/aee.png",
+      "startDate": "Set 2021",
+      "endDate": "Jul 2024",
+      "company": "Curso Profissional de Gestão de Equipamentos Informáticos",
+      "position": "Escola Dr. Jaime Magalhães Lima"
+    }
+  ],
+  "projects": [
+    {
+      "profissional": "Origami Hub",
+      "type": "WebApp",
+      "title": "Calculadora Echo Unify",
+      "tech": ["PHP", "JQuery", "MySQL"],
+      "description": "Calculadora para Hardware para sistemas de video-vigilância.\n Contruibuí np desenvolvimento do backend e gestão das APIs.",
+      "liveUrl": "https://echounify.com/calculator/"
+    },
+    {
+      "profissional": "Origami Hub",
+      "tech": ["PHP", "JQuery", "CSS", "MySQL"],
+      "type": "Website",
+      "title": "Website Origami",
+      "description": "Website empresarial da empresa Origami Hub. Fui responsável pelo design do site, pela estruturação e organização do conteúdo, bem como pelo desenvolvimento do backend.",
+      "liveUrl": "https://origamihub.tech/site/index.php"
+    },
+    {
+      "tech": ["Arduino (C)", "PHP", "CSS", "MySQL"],
+      "type": "IoTs / WebApp",
+      "title": "Smart Locker",
+      "description": "Projeto de Aptidão Profissional que consiste num sistema de tranca para cofres que utiliza cartão RFID e PIN associado. Inclui uma WebApp para registo de acessos e gestão de contas, com os dados armazenados numa base de dados.",
+      "githubUrl": "https://github.com/SkyGlis/smart-locker",
+      "liveUrl": "https://www.youtube.com/watch?v=RLugrnCRbE4"
+    },
+    {
+      "title": "Portfólio Pessoal",
+      "tech": ["Next.js", "Tailwind CSS"],
+      "type": "Website",
+      "description": "Portfólio pessoal, no qual usei a maior parte das tecnologias que conheço, de forma a evoluir no meu conhecimento na programação.",
+      "githubUrl": "https://github.com/SkyGlis/portfolio",
+      "liveUrl": "https://daniel-santos.vercel.app"
+    }
+  ]
+}

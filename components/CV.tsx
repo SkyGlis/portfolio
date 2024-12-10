@@ -1,4 +1,5 @@
 import PdfViewer from "./PDFViewer";
+import Config from '@/config.json'
 
 export default function Currículo() {
   return(
@@ -7,7 +8,7 @@ export default function Currículo() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Currículo</h2>
         </div>
-        <PdfViewer url="/CV.pdf"/>
+        <PdfViewer url={Config.CV}/>
       </div>
     </section>
   )
