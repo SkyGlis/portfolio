@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
 import CV from "@/components/CV";
 import PitchPage from "@/components/PitchPage";
+import NewPortfolioBanner from "@/components/NewPortfolioBanner";
 
 export default function MainPage() {
   const [activeSection, setActiveSection] = useState<string>("hero");
@@ -23,6 +24,7 @@ export default function MainPage() {
   return (
     <div>
       <Navbar onNavigate={handleNavigation} active={activeSection} />
+      <NewPortfolioBanner />
       
       <motion.div
         key={animationKey}
