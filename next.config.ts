@@ -1,13 +1,10 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.node/,
-      use: "raw-loader",
-    });
-    return config;
+const config: NextConfig = {
+  // ponytail: always lands on PT; add Accept-Language detection in proxy.ts if EN visitors complain
+  async redirects() {
+    return [{ source: "/", destination: "/pt", permanent: false }];
   },
 };
 
-export default nextConfig;
+export default config;
