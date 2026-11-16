@@ -130,16 +130,6 @@ export const projects: {
     links: [{ label: { pt: "código", en: "code" }, href: "https://github.com/SkyGlis/library-api-test-suite" }],
   },
   {
-    title: { pt: "Calculadora Echo Unify", en: "Echo Unify Calculator" },
-    kind: { pt: "Web app", en: "Web app" },
-    tech: ["PHP", "jQuery", "MySQL"],
-    desc: {
-      pt: "Calculadora de hardware para sistemas de videovigilância. Trabalhei no backend e na gestão das APIs, durante o estágio na Origami Hub.",
-      en: "Hardware calculator for video surveillance systems. I worked on the backend and managed the APIs during my internship at Origami Hub.",
-    },
-    links: [{ label: { pt: "ver online", en: "live site" }, href: "https://echounify.com/calculator/" }],
-  },
-  {
     title: { pt: "Smart Locker", en: "Smart Locker" },
     kind: { pt: "IoT + web app", en: "IoT + web app" },
     tech: ["Arduino (C)", "PHP", "CSS", "MySQL"],
