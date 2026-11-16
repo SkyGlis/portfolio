@@ -206,7 +206,7 @@ export const ui = {
       "Comecei a programar sozinho aos 11 anos e nunca mais parei. Hoje construo aplicações web e APIs REST com PHP, Laravel, Vue.js, Python e FastAPI, com bases de dados SQL e Docker, e já integrei modelos de visão computacional e LLMs em aplicações reais.",
       "No estágio na Vivify Digital entreguei 6 projetos de IA aplicada para a indústria, da inspeção visual de peças com YOLO a um chatbot com LLM local que responde sobre os dados da empresa. Terminei o CTeSP em Programação de Sistemas de Informação na Universidade de Aveiro com 17,5 valores e o Prémio Caixa Mais Mundo.",
     ],
-    contact: "Procuro uma posição júnior como Software Developer ou Full Stack Developer, em Aveiro ou remoto. Manda mensagem que eu respondo.",
+    contact: "Procuro uma posição júnior como Software Developer ou Full Stack Developer, em Aveiro ou remoto.",
     cv: "currículo (PDF)",
     term: {
       label: "Terminal: escreve um comando e carrega Enter",
@@ -250,7 +250,7 @@ export const ui = {
       "I taught myself to code at 11 and never stopped. Today I build web apps and REST APIs with PHP, Laravel, Vue.js, Python and FastAPI, on SQL databases and Docker, and I've integrated computer vision models and LLMs into real applications.",
       "During my internship at Vivify Digital I delivered 6 applied AI projects for industry, from visual inspection of parts with YOLO to a local LLM chatbot that answers questions about company data. I finished my CTeSP in Information Systems Programming at the University of Aveiro with a 17.5/20 grade and the Caixa Mais Mundo award.",
     ],
-    contact: "I'm looking for a junior Software Developer or Full Stack Developer role, in Aveiro or remote. Send me a message and I'll get back to you.",
+    contact: "I'm looking for a junior Software Developer or Full Stack Developer role, in Aveiro or remote.",
     cv: "résumé (PDF)",
     term: {
       label: "Terminal: type a command and press Enter",
